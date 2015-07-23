@@ -32,6 +32,7 @@ def register_extensions(app):
 
 
 def register_blueprints(app):
-    app.register_blueprint(route.api.mod)
+    # app.register_blueprint(route.api.mod)
+    app.register_blueprint(route.pages.page)
     return None
 
