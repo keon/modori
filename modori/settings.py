@@ -3,6 +3,8 @@ import os
 
 os_env = os.environ
 
+# Settings has to be updated.. not everything is used here.
+
 class Config(object):
     SECRET_KEY = os_env.get('SKELETON_SECRET', 'secret-key')  # TODO: Change me
     APP_DIR = os.path.abspath(os.path.dirname(__file__))  # This directory

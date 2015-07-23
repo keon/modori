@@ -10,6 +10,10 @@ from .apifields import *
 from datetime import datetime
 import types
 
+from konlpy.tag import Mecab
+
+mecab = Mecab()
+
 
 
 mod = Blueprint('rest', __name__, static_folder="../static")
@@ -30,14 +34,11 @@ def home(*args, **kwargs):
     return render_template('index.html')
 
 
-
-#######################################users###############################
-
-
-@api.resource('/api/users', endpoint='users')
-class UserListAPI(Resource):
+#MECAB
+@api.resource('/api/mecab', endpoint='mecab')
+class MecabAPI(Resource):
     def __init__(self):
         pass
     def get(self):
         test = "testt"
-        return marshal(test, test_fields)
+        return mecab.morphs(u'영등포구청역에 있는 맛집 좀 알려주세요.') #marshal(test, test_fields)
