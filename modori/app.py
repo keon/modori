@@ -10,6 +10,8 @@ from modori.extensions import (
 from modori import route
 
 
+
+
 def create_app(config_object=ProdConfig):
     '''An application factory, as explained here:
         http://flask.pocoo.org/docs/patterns/appfactories/
@@ -30,6 +32,7 @@ def register_extensions(app):
 
 
 def register_blueprints(app):
-    app.register_blueprint(route.api.mod)
+    # app.register_blueprint(route.api.mod)
+    app.register_blueprint(route.pages.page)
     return None
 
