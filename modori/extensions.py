@@ -8,3 +8,6 @@ bcrypt = Bcrypt()
 
 from flask_restful import Api
 api = Api()
+
+from konlpy.tag import Mecab
+mecab = Mecab()
