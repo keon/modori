@@ -77,7 +77,7 @@
         <div class="col-lg-4">
           <img src="static/img/easy-to-use.png" alt="" style="max-width:200px">
           <h3>Easy to Use</h3>
-          <p>It is a simple web api without any authentication process. Just send data through http request and get the result!</p>
+          <p>It is a simple web api. Just send data through http request and get the result!</p>
         </div>
         <div class="col-lg-4">
           <img src="static/img/osi.png" alt="" style="max-width:130px">
@@ -94,7 +94,7 @@
   <div id="features">
     <div class="container">
       <div class="row">
-        <h1 class="centered">What's New?</h1>
+        <h1 class="centered">Why Modori?</h1>
         <br>
         <br>
         <div class="col-lg-6 centered">
@@ -179,8 +179,9 @@
         <br>
         <div class="col-lg-12">
           <img src="static/img/community.png" alt="">
-          <h3>modori is built with community developers</h3>
+          <h3>modori is built by community developers</h3>
           <p><a>Korean Facebook Group</a></p>
+          <p><a href="https://github.com/keonkim/modori">Modori Github</a></p>
         </div>
       </div>
       <br>
@@ -191,32 +192,47 @@
   <div id="showcase">
     <div class="container">
       <div class="row">
-        <h1 class="centered">Some Screenshots</h1>
+        <h1 class="centered">Simple Working Demo</h1>
         <br>
-        <div class="col-lg-8 col-lg-offset-2">
-          <div id="carousel-example-generic" class="carousel slide">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            </ol>
-          
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="static/img/item-01.png" alt="">
-              </div>
-              <div class="item">
-                <img src="static/img/item-02.png" alt="">
-              </div>
-            </div>
-          </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4">
+          <form>
+            <textarea style="width:100%; min-height:200px;"></textarea>
+            <button style="width:100%; margin-bottom:30px;" class="btn btn-success">submit</button>
+          </form>
         </div>
+        <div class="col-lg-4">
+          <pre>
+{
+  "type:404",
+  "message":"api not found"
+}
+          </pre>
+        </div>
+        <div class="col-lg-2"></div>
       </div>
       <br>
       <br>
       <br>  
     </div><!-- /container -->
   </div>  
+
+  <section id="footer" name="footer"></section>
+  <!-- INTRO WRAP -->
+  <div id="intro">
+    <div class="container">
+      <div class="row centered">
+        <h1>Main Contributors</h1>
+        <br>
+        <br>
+        <a href="http://keonkim.github.io"><h4>Keon Woo Kim<h4></a>
+        <a href="https://github.com/Outpark"><h4>Seongsoon Park<h4></a>
+      </div>
+      <br>
+      <hr>
+      </div> <!--/ .container -->
+  </div><!--/ #introwrap -->
+  
+
 
 {% endblock %}
