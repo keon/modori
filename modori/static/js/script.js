@@ -19,7 +19,8 @@ $(function(){
 			url:"/api/pos",
 			dataType:'json',
 			encode:true,
-			data:data,
+			data:JSON.stringify(data),
+                        contentType:"application/json"
 
 		})
 		.done(function(data){
