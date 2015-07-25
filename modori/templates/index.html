@@ -19,16 +19,16 @@
           <div class="col-lg-4">
             <pre>
 <code class="json hljs" style="text-align:left;">[
+
+
   {
-    "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"apples"</span></span>,
-    "<span class="hljs-attribute">count</span>": <span class="hljs-value">[<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>]</span>,
-    "<span class="hljs-attribute">description</span>": <span class="hljs-value">{"<span class="hljs-attribute">text</span>": <span class="hljs-value"><span class="hljs-string">"..."</span></span>, "<span class="hljs-attribute">sensitive</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>}
-  </span>},
-  {
-    "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"oranges"</span></span>,
-    "<span class="hljs-attribute">count</span>": <span class="hljs-value">[<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>]</span>,
-    "<span class="hljs-attribute">description</span>": <span class="hljs-value">{"<span class="hljs-attribute">text</span>": <span class="hljs-value"><span class="hljs-string">"..."</span></span>, "<span class="hljs-attribute">sensitive</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>}
-  </span>}
+
+    "<span class="hljs-attribute">text</span>": <span class="hljs-value"><span class="hljs-string">"아빠가 방에 들어가신다"</span></span>
+  </span>
+
+  }
+
+
 ]
 </code>
             </pre>
@@ -37,15 +37,16 @@
             <pre>
 <code class="json hljs" style="text-align:left;">[
   {
-    "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"apples"</span></span>,
-    "<span class="hljs-attribute">count</span>": <span class="hljs-value">[<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>]</span>,
-    "<span class="hljs-attribute">description</span>": <span class="hljs-value">{"<span class="hljs-attribute">text</span>": <span class="hljs-value"><span class="hljs-string">"..."</span></span>, "<span class="hljs-attribute">sensitive</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>}
-  </span>},
-  {
-    "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"oranges"</span></span>,
-    "<span class="hljs-attribute">count</span>": <span class="hljs-value">[<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>]</span>,
-    "<span class="hljs-attribute">description</span>": <span class="hljs-value">{"<span class="hljs-attribute">text</span>": <span class="hljs-value"><span class="hljs-string">"..."</span></span>, "<span class="hljs-attribute">sensitive</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>}
-  </span>}
+    "<span class="hljs-attribute">text</span>": <span class="hljs-value"><span class="hljs-string">"아빠가 방에 들어가신다"</span></span>,
+    "<span class="hljs-attribute">result</span>":[
+    <span class="hljs-value">[<span class="hljs-string">"아빠","NNG"</span>]</span>,
+    <span class="hljs-value">[<span class="hljs-string">"가","JKS"</span>]</span>,
+    <span class="hljs-value">[<span class="hljs-string">"방","NNG"</span>]</span>,
+    <span class="hljs-value">[<span class="hljs-string">"에","JKB"</span>]</span>,
+    <span class="hljs-value">[<span class="hljs-string">"들어가","VV"</span>]</span>,
+    <span class="hljs-value">[<span class="hljs-string">"신다","EP+EC"</span>]</span>
+    ]
+  }
 ]
 </code>
             </pre>
@@ -90,82 +91,6 @@
       </div> <!--/ .container -->
   </div><!--/ #introwrap -->
   
-  <!-- FEATURES WRAP -->
-  <div id="features">
-    <div class="container">
-      <div class="row">
-        <h1 class="centered">Why Modori?</h1>
-        <br>
-        <br>
-        <div class="col-lg-6 centered">
-          <img class="centered" src="static/img/mobile.png" alt="">
-        </div>
-        
-        <div class="col-lg-6">
-          <h3>Some Features</h3>
-          <br>
-        <!-- ACCORDION -->
-                <div class="accordion ac" id="accordion2">
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                            First Class Design
-                            </a>
-                        </div><!-- /accordion-heading -->
-                        <div id="collapseOne" class="accordion-body collapse in">
-                            <div class="accordion-inner">
-                <p>This is modori testing.</p>
-                </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
-                    </div><!-- /accordion-group -->
-                    <br>
-    
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                            Retina Ready Theme
-                            </a>
-                        </div>
-                        <div id="collapseTwo" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
-                    </div><!-- /accordion-group -->
-                    <br>
-    
-                     <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                            Awesome Support
-                            </a>
-                        </div>
-                        <div id="collapseThree" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
-                    </div><!-- /accordion-group -->
-                    <br>
-                    
-                     <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                            Responsive Design
-                            </a>
-                        </div>
-                        <div id="collapseFour" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
-                    </div><!-- /accordion-group -->
-                    <br>      
-          </div><!-- Accordion -->
-        </div>
-      </div>
-    </div><!--/ .container -->
-  </div><!--/ #features -->
   
   <section id="community" name="community"></section>
   <!-- INTRO WRAP -->
@@ -196,17 +121,17 @@
         <br>
         <div class="col-lg-2"></div>
         <div class="col-lg-4">
-          <form>
-            <textarea style="width:100%; min-height:200px;"></textarea>
-            <button style="width:100%; margin-bottom:30px;" class="btn btn-success">submit</button>
-          </form>
+          <textarea placeholder="한국어로 된 텍스트를 입력해보세요" type="text" name="text" style="width:100%; min-height:100px;"></textarea>
+          <button href="javascript:void();" id="send" style="width:100%; margin-bottom:30px;" class="btn btn-success">submit</button>
         </div>
         <div class="col-lg-4">
+          
           <pre>
-{
+          <span id="result">여기에 결과물이 나타납니다.</span>
+<!--{ 
   "type:404",
   "message":"api not found"
-}
+} -->
           </pre>
         </div>
         <div class="col-lg-2"></div>
